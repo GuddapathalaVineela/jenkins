@@ -1,6 +1,6 @@
-# Jenkins Setup
+## Jenkins Setup
 
-## Partition the disk
+### Partition the disk
 
     growpart /dev/nvme0n1 4 
     lvextend -L +10G /dev/mapper/RootVG-varVol
@@ -11,7 +11,7 @@
     xfs_growfs /var
     xfs_growfs /home
 
-## Installation commands from Jenkins official doc
+### Installation commands from Jenkins official doc
 
     sudo curl -o /etc/yum.repos.d/jenkins.repo \
         https://pkg.jenkins.io/redhat-stable/jenkins.repo
@@ -24,12 +24,12 @@
     sudo systemctl enable jenkins
 
 
-## Plugins
+### Plugins
 
-### . Stage View
+#### . Stage View
 
-## Master Agent Architechture
+### Master Agent Architechture
 
-### . Create credentials to connect agent
-### . Install Java in agent
-### . Select Non Verification strategy
+#### . Create credentials to connect agent
+#### . Install Java in agent
+#### . Select Non Verification strategy
