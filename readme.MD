@@ -10,7 +10,7 @@
 
 #### xfs_growfs /
 #### xfs_growfs /var
-#### xfs_growfs /home
+xfs_growfs /home
 
 ## Installation commands from Jenkins official doc
 
